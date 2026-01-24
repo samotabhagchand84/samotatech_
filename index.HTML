@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Bhagchand Samota | Tech Consultant</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg,#0f4c75,#3282b8);
+    color: white;
+    text-align: center;
+}
+
+/* NAVBAR */
+nav {
+    position: sticky;
+    top: 0;
+    background: rgba(15,76,117,0.95);
+    padding: 12px;
+    z-index: 1000;
+}
+
+nav a {
+    color: white;
+    margin: 0 12px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #ffd369;
+}
+
+/* HEADER */
+header {
+    padding: 40px 20px;
+    animation: fadeDown 1.5s;
+}
+
+@keyframes fadeDown {
+    from {opacity:0; transform: translateY(-30px);}
+    to {opacity:1; transform: translateY(0);}
+}
+
+header img {
+    width: 170px;
+    height: 170px;
+    border-radius: 50%;
+    border: 5px solid white;
+    object-fit: cover;
+}
+
+/* RUNNING LINE */
+.marquee {
+    margin-top: 12px;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.marquee span {
+    display: inline-block;
+    padding-left: 100%;
+    animation: marquee 20s linear infinite;
+    font-weight: bold;
+}
+
+.cert {
+    color: red;
+    font-size: 22px;
+    font-weight: bold;
+    font-style: italic;
+    margin-right: 30px;
+}
+
+@keyframes marquee {
+    0% {transform: translateX(0);}
+    100% {transform: translateX(-100%);}
+}
+
+/* SECTIONS */
+section {
+    max-width: 1000px;
+    margin: 30px auto;
+    padding: 25px;
+    background: rgba(255,255,255,0.15);
+    border-radius: 14px;
+    animation: fadeUp 1.5s;
+}
+
+@keyframes fadeUp {
+    from {opacity:0; transform: translateY(30px);}
+    to {opacity:1; transform: translateY(0);}
+}
+
+/* SERVICES */
+.services {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(220px,1fr));
+    gap: 20px;
+}
+
+.card {
+    background: rgba(255,255,255,0.2);
+    padding: 20px;
+    border-radius: 14px;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    background: rgba(255,255,255,0.3);
+}
+
+/* BUTTONS */
+.btn {
+    display: inline-block;
+    margin: 10px;
+    padding: 12px 26px;
+    background: white;
+    color: #0f4c75;
+    text-decoration: none;
+    border-radius: 30px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #ffd369;
+    transform: scale(1.1);
+}
+
+/* FOOTER */
+footer {
+    padding: 25px;
+    font-size: 13px;
+    opacity: 0.9;
+    line-height: 1.6;
+}
+
+/* MOBILE */
+@media (max-width:600px) {
+    header h1 {
+        font-size: 26px;
+    }
+    .cert {
+        font-size: 18px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<!-- NAV -->
+<nav>
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<!-- HEADER -->
+<header>
+    <img src="photo.jpeg" alt="Bhagchand Samota">
+    <h1>Bhagchand Samota</h1>
+    <p>Cyber Security | Tech Consultant | Automation Expert</p>
+
+    <div class="marquee">
+        <span>
+            <span class="cert">
+                Cyber Security and Ethical Hacking with Applied AI from iHUB Divyasampark, IIT Roorkee
+            </span>
+            Cyber Security • Social Media Investigation • Tech Consulting • Website & App Design • Excel & VBA
+        </span>
+    </div>
+</header>
+
+<!-- ABOUT -->
+<section id="about">
+    <h2>About Me</h2>
+    <p>
+        I am trained in <strong>Cyber Security and Ethical Hacking with Applied AI</strong>
+        from <strong>iHUB Divyasampark, IIT Roorkee</strong>, providing professional
+        technology consulting and cyber-related services.
+    </p>
+    <p>
+        I assist individuals and families in understanding internet usage, social media
+        activities, online risks, and technical issues through ethical methods and
+        detailed analysis.
+    </p>
+    <p>
+        Charges for services are decided based on the specific user requirement.
+    </p>
+</section>
+
+<!-- SERVICES -->
+<section id="services">
+    <h2>My Services</h2>
+    <div class="services">
+        <div class="card">🔐 Cyber Security Consulting</div>
+        <div class="card">🕵️ Social Media Investigation & Reports</div>
+        <div class="card">🛡️ Internet Safety & Digital Awareness</div>
+        <div class="card">💻 Software & Technical Problem Solving</div>
+        <div class="card">🌐 Website & Mobile App Design</div>
+        <div class="card">📊 Excel, VBA, MS Access & Automation</div>
+    </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+    <h2>Contact Me</h2>
+    <a class="btn" href="tel:9166035636">📞 Call: 9166035636</a>
+    <a class="btn" href="https://wa.me/919166035636">💬 WhatsApp: 9166035636</a>
+    <a class="btn" href="mailto:samota.bhagchand84@gmail.com">📧 Email</a>
+</section>
+
+<!-- FOOTER / DISCLAIMER -->
+<footer>
+    <p><strong>© 2026 Bhagchand Samota | @samotatech | All Rights Reserved</strong></p>
+
+    <p>
+        Disclaimer: This is a personal private website owned and operated by
+        <strong>Bhagchand Samota</strong> and its digital channel <strong>@samotatech</strong>.
+        This website is not associated with, endorsed by, or affiliated with any
+        Government organization, IIT, iHUB, or any other private or public entity.
+    </p>
+
+    <p>
+        Any services, consultancy, guidance, or investigation reports provided through
+        this website are personal and professional in nature. In case of any dispute
+        between users and the website owner, the matter shall be resolved mutually and
+        personally, and shall not be subject to any court of law.
+    </p>
+</footer>
+
+</body>
+</html>
